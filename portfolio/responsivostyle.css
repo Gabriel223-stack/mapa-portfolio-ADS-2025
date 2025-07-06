@@ -1,0 +1,75 @@
+/* === style_responsivo.css === */
+
+/* Ativa media queries para telas menores */
+@media screen and (max-width: 1024px) {
+  .cabecalho,
+  .principal {
+    width: 90vw;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .cabecalho {
+    align-items: center;
+    text-align: center;
+  }
+
+  .cabecalho_pefil {
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .cabecalho_navegacao {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .cabecalho_navegacao > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .alinhamento_habilidades {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cabecalho h1 {
+    font-size: 1.5rem;
+  }
+
+  .cabecalho_paragrafo {
+    font-size: 0.9rem;
+  }
+
+  .lista_um {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Aplica o scroll suave mesmo em mobile */
+html {
+  scroll-behavior: smooth;
+}
